@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+/*www5cn插屏广告*/
+#gg{
+	/*width: 100%;*/
+}
+.gg-bk{
+	position: absolute;width: 100%;top: 0;height: 100%;background-color: black;opacity: 0.5;
+	z-index: 999;
+}
+.gg-ct{
+	width: 90%;
+	height: 52%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-top: -17em;
+	margin-left: -45%;
+	z-index: 99999999999999999;
+	background-color: red;
+	overflow: hidden;
+}
+#gg-close{
+	display: block;
+	background-image: url(http://img0.hx.com/magazine/img/inter_close_logo.png);
+	background-position: -50px -50px;
+	width: 59px;
+	height: 60px;
+	position: absolute;
+	right: 4px;
+	top: 5px;
+	text-indent: -9999px;
+	overflow: hidden;
+	z-index: 100;
+	background-size: 200px 300px;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.gg-ct ul{
+	width: 100%;height: 100%;
+	position: absolute;left: 0;
+}
+.gg-ct li{
+	float: left;width: 33%;height: 100%;background-color: pink;
+}
+.gg-ct img{
+	width: 100%;height: 100%;
+}
+.gg-move{
+	-webkit-transition:all 300ms ease-in-out;
+}

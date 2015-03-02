@@ -1,0 +1,66 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*body{background:#F3F3F3;}*/
+.ad2_box {width:100%; overflow:hidden;margin:0 auto 1em;}
+.magazine_list {padding-right:9px;}
+.magazine_list ul li {width:41%; padding:10px; background:#FFF;}
+.magazine_list ul li.l,.magazine_list ul li a .left {float:left;}
+.magazine_list ul li.r,.magazine_list ul li a .right {float:right;}
+.magazine_list ul li.first h2 i {color:#666; font-style:normal;}
+.magazine_list ul li.first h2 em {font-size:1.3em;}
+.magazine_list ul li a {display:block;}
+.magazine_list ul li p.adlogo {margin-top:1.3em;}
+.ad2_box ul li a .left {width:6.5em; height:6.5em; overflow:hidden;}
+.magazine_list ul li a .left img {width:100%; height:auto;}
+.magazine_list ul li a .right {width:53%; overflow:hidden;}
+.magazine_list ul li a .right h2 { color:#333; margin-bottom:0.9em;}
+.magazine_list ul li a .right p {color:#A6A6A6; margin-top:1.5em; font-size:0.9em;}
+.magazine_list ul li a .right p i {font-style:normal; color:#e30111;}
+.ad2_box .btn {width:95%; text-align:right; height:2em; margin:1.5em 0 1em; padding-right:25px;}
+.ad2_box .btn span {display:inline-block; width:1em; height:1em; margin:0 5px; border:1px solid #F00; border-radius:50%;}
+.ad2_box .btn span.active {background:#F00;}
+.ad_big {width:100%; margin-top:2em;}
+.ad_big a img {width:100%; height:auto;}
+.tgimg {margin:2em 1em;}
+.ads_last {padding-bottom:45em;}
+
+/*新增本地插屏广告*/
+#ads_new {display:block;}
+.ads_bg { width:100%; height:100%; position:absolute; top:0; left:0; background:#000; opacity:0.7; overflow:hidden; z-index:9998;}
+.ads_new_box {text-align:center; width:90%; position:absolute; left:50%; top:50%; margin-top:-17em; margin-left:-45%; z-index:9999;}
+.ads_new_box a {display:inline-block; width:100%;}
+.ads_new_box a img {width:100%; height:auto;}
+.ads_new_box #ads_new_close {display:block;background-image:url(../img/inter_close_logo.png);background-position:-50px -50px;width: 59px;height: 60px;position: absolute;right: 4px;top: 5px;text-indent: -9999px;overflow: hidden;z-index: 100;background-size: 200px 300px;background-repeat: no-repeat;cursor:pointer;}
+
+/*用户作品集*/
+.ads_last {background:#f1edea; padding-bottom:100em;}
+.no_info {width:95%; margin:0 auto; font-size:1.4em; color:#666; text-align:center;}
+.user_box {width:95%; margin:0 auto 1em; text-align:center; background:url(../img/user_line1.png) repeat-x center bottom; padding-bottom:1.5em;}
+.user_box a img {width:7em; height:7em; margin-top:1em; box-shadow:5px 0 5px #2e2e2e; border-radius:50%;}
+.user_name {margin-top:0.5em; font-size:1.75em; color:#575454;}
+.user_name em {color:#F05307; margin-right:1em;}
+.list_mag {width:95%; margin:1.5em auto 0; height:42em; overflow:hidden;}
+.list_mag li {width:14em; border-radius:7px; background:#FFF; float:left; margin:0 5.5% 3% 1.5%; overflow:hidden;}
+.list_mag li.last_one {margin-right:0;}
+.list_mag li a {color:#333;}
+.list_mag li a .img_box {width:14em; height:14em; overflow:hidden;}
+.list_mag li a img {width:100%; height:auto;}
+.list_mag li a p.tit {padding:0.5em 10px 0; height:1.5em; overflow:hidden; font-size:1.5em;border-bottom:1px dashed #dddada;}
+.list_mag li a p.read {padding: 0 10px;height: 2em; line-height:2em; overflow: hidden;font-size: 1.3em;} 
+.list_mag li a p.read i {font-style:normal; color:#e30111;}
+.ads_last .tg {display:block;width:95%; margin:0 auto 1em;}
+.user_ads {width:100%; margin:0 auto; text-align:center;}
+.user_ads a img  {width:100%; height:158px;}
+.user_ads p {color:#333; text-align:center; margin-top:1em; font-size:1.3em;} 
+
+.ad_foot {padding:0;}
+.ad2_box,.foots .tg {padding:0 15px;}
+
+/**百度插屏广告及关闭按钮**/
+.bdad_bg { width:100%; height:100%; position:absolute; top:0; left:0; background:#000; opacity:0.7; overflow:hidden; z-index:9998;}
+#bdad_box {text-align:center; width:100%; position:absolute; top:45%; margin-top:-17em; z-index:9999;}
+#bd_close  {display:block;background-image:url(../img/inter_close_logo.png);background-position:-50px -50px;width: 59px;height: 60px;position: absolute;right: 4px;top: 5px;text-indent: -9999px;overflow: hidden;z-index: 100;background-size: 200px 300px;background-repeat: no-repeat;cursor:pointer;}
+
+
+
