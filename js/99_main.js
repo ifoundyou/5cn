@@ -228,6 +228,7 @@ var car2 = {
 					$(item).hasClass('l')&&$(item).addClass('linearL ef_show');
 					$(item).hasClass('b')&&$(item).addClass('bounceinB ef_show');
 					$(item).hasClass('t')&&$(item).addClass('bounceinT ef_show');
+					$(item).hasClass('o')&&$(item).addClass('rotatein ef_show');
 				},ms);
 				ms+=800;//间隔800ms触发不容的运动容器
 			});

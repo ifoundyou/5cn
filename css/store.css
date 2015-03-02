@@ -72,7 +72,9 @@
 .l{
     width: 100%;
 }
-
+.o{
+    width: 100%;
+}
 /*动画类*/
 .bounceinT{/* 弹入-从上 */
 	-webkit-animation:bounceinT 1s ease-in-out;
@@ -85,6 +87,10 @@
 }
 .linearL{/* 直入-从左 */
 	-webkit-animation:linearL 0.5s ease-in;
+}
+.rotatein{
+
+    -webkit-animation:rotatein 0.5s ease-in;
 }
 
 /*动画帧*/
@@ -111,4 +117,9 @@
 @-webkit-keyframes linearL{
     0%{-webkit-transform:translate3d(-640px,0,0);}
     100%{-webkit-transform:translate3d(0);}
+}
+
+@-webkit-keyframes rotatein{
+    0%{opacity:0;-webkit-transform:rotate(-200deg);}
+    100%{opacity:1;-webkit-transform:rotate(0);}
 }
