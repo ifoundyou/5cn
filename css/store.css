@@ -34,6 +34,12 @@
     margin-top:10px; 
     margin-bottom:10px; 
 }
+/*.p-ct{
+    -webkit-perspective:1200;
+}
+.translate-back{
+    -webkit-transform-style:preserve-3d;
+}*/
 /*文字类*/
 .tx{
     word-break: break-all;
@@ -75,6 +81,15 @@
 .o{
     width: 100%;
 }
+.f{
+    width: 100%;
+}
+.s{
+    width: 100%;
+}
+.n{
+    width: 100%;
+}
 /*动画类*/
 .bounceinT{/* 弹入-从上 */
 	-webkit-animation:bounceinT 1s ease-in-out;
@@ -91,6 +106,15 @@
 .rotatein{
 
     -webkit-animation:rotatein 0.5s ease-in;
+}
+.flip{
+    -webkit-animation:flip 0.5s ease-in;
+}
+.shake{
+    -webkit-animation:shake 0.5s ease-in;
+}
+.ring{
+    -webkit-animation:ring 0.5s ease-in;
 }
 
 /*动画帧*/
@@ -122,4 +146,26 @@
 @-webkit-keyframes rotatein{
     0%{opacity:0;-webkit-transform:rotate(-200deg);}
     100%{opacity:1;-webkit-transform:rotate(0);}
+}
+
+@-webkit-keyframes flip{
+    0%{-webkit-transform:perspective(400px) rotateY(0);-webkit-animation-timing-function:ease-out;}
+    40%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(170deg);-webkit-animation-timing-function:ease-out;}
+    50%{-webkit-transform:perspective(400px) translateZ(150px) rotateY(190deg) scale(1);-webkit-animation-timing-function:ease-in;}
+    80%{-webkit-transform:perspective(400px) rotateY(360deg) scale(0.95);-webkit-animation-timing-function:ease-in;}
+    100%{-webkit-transform:perspective(400px) scale(1);-webkit-animation-timing-function:ease-in;}
+}
+
+@-webkit-keyframes shake{
+    0%,100%{-webkit-transform:translateX(0);}
+    10%,30%,50%,70%,90%{-webkit-transform:translateX(-10px);}
+    20%,40%,60%,80%{-webkit-transform:translateX(10px);}
+}
+
+@-webkit-keyframes ring{
+    0%{-webkit-transform:scale(1);}
+    10%,20%{-webkit-transform:scale(0.9) rotate(-3deg);}
+    30%,50%,70%,90%{-webkit-transform:scale(1.1) rotate(3deg);}
+    40%,60%,80%{-webkit-transform:scale(1.1) rotate(-3deg);}
+    100%{-webkit-transform:scale(1) rotate(0);}
 }
